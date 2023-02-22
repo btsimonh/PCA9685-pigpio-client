@@ -56,3 +56,8 @@ await servos.setServoScaled(servo, scaledposn); // set a posn 0-1 which will be 
 moveTo(servo, target_posn, duration_ms); // NOT ASYNC.  move the servo to a new position over a period (starts a 40ms timer)
 moveToScaled(servo, scaled_target_posn, duration_ms); // NOT ASYNC.  move the servo to a new position over a period (starts a 40ms timer) - scaled so 0-1 -> min-max as set.
 ```
+
+
+# Acknowledgments
+
+It was made possible because of the brilliant work by the writers of [piopiod](https://abyz.me.uk/rpi/pigpio/pigpiod.html), and the implementaiton of [pigpio-client](https://github.com/guymcswain/pigpio-client) by @guymcswain (hopefully he'll merge my i2c enhancements soon...).  
