@@ -1,9 +1,25 @@
 # PCA9685-pigpio-client
 PCA9685 servo driver based on pigpio-client
 
-
 module adds .PCA9685Servos(opts) to pigpio.
 
+## install
+
+```
+npm install --save github:btsimonh/PCA9685-pigpio-client
+```
+
+this depends upon github:btsimonh/pigpio-client#Addmorei2c
+
+
+## Usage:
+
+let pca = require('PCA9685-pigpio-client');
+
+pca(pigpio);
+
+
+after pigpio connect, 
 opts like:
 ```
 {
@@ -14,14 +30,6 @@ opts like:
 }
 ```
 
-## Usage:
-
-let pca = require('PCA9685-pigpio-client');
-
-pca(pigpio);
-
-
-after pigpio connect, 
 ```
 let opts = {};
 let servos = pigpio.PCA9685Servos(opts);
