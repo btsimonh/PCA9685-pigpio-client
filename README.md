@@ -18,8 +18,9 @@ let pca = require('PCA9685-pigpio-client');
 
 pca(pigpio);
 
+after pigpio connect, call pigpio.PCA9685Servos(opts)
 
-after pigpio connect, 
+
 opts like:
 ```
 {
